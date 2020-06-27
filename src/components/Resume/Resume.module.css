@@ -4,8 +4,7 @@
 }
 
 .Container a{
-    background-color: white;
-    color: black;
+    background-color: white ;
     padding: .5em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
@@ -13,11 +12,10 @@
 }
 
 .Container a:hover{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: #35ce8d;
 }
 
 .Container a:visited{
-    color: white;
-    background-color: black;
+    color: inherit;
 }

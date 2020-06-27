@@ -1,5 +1,6 @@
 .About{
     margin-top: 80px;
+    padding: 20px;
 }
 
 .About h1{
@@ -8,7 +9,7 @@
 
 .Content{
     text-align: center;
-    width: 500px;
+    width: 75%;
     /* border: solid red 2px; */
     margin: 0 auto;
 }
@@ -17,6 +18,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.Centered{
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
 
@@ -29,8 +36,8 @@
 }
 
 .Octo, .Octo div{
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
 }
 
 .Octo{
@@ -49,11 +56,6 @@
     }
 }
 
-@media screen and (min-width: 60em){
-    .Card{
-        flex: 0 1 calc(25% - 1em);
-    }
-}
 
 /* @media screen and (min-width: 52em){
     .Centered{
