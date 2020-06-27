@@ -1,0 +1,62 @@
+.About{
+    margin-top: 80px;
+}
+
+.About h1{
+    text-align: center;
+}
+
+.Content{
+    text-align: center;
+    width: 500px;
+    /* border: solid red 2px; */
+    margin: 0 auto;
+}
+
+.Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.Octo, .Octo div{
+    margin:0 auto;
+    transform-origin: 50% 50%;
+    overflow:hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.Octo, .Octo div{
+    width: 270px;
+    height: 270px;
+}
+
+.Octo{
+    transform: rotate(45deg);
+}
+
+.Octo1{
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 40em){
+    .Cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 60em){
+    .Card{
+        flex: 0 1 calc(25% - 1em);
+    }
+}
+
+/* @media screen and (min-width: 52em){
+    .Centered{
+
+    }
+} */

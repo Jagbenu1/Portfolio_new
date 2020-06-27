@@ -1,0 +1,22 @@
+.Social{
+    position: absolute;
+    margin-top: 10px;
+    display: flex;
+    left: 43.5%;
+}
+
+.Social i{
+    padding-right: 30px;
+    font-size: 25px;
+    color: #9a9b9c;
+}
+
+.Social i:hover{
+    color: black;
+}
+
+@media screen and (max-width: 680px){
+    .Social{
+        left: 37%;
+    }
+}

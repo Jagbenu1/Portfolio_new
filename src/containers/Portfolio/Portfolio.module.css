@@ -1,0 +1,21 @@
+.Container{
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    border:solid red 2px;
+    text-align: center;
+}
+
+
+.Row{
+    margin: 0 -5px;
+    box-sizing: border-box;
+    /* border: solid red 2px; */
+}
+
+.Row:after{
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
