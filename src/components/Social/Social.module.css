@@ -30,12 +30,12 @@
 
 @media screen and (min-width: 768px){
     .Social{
-        left:39.5%;
+        left:38%;
     }
 }
 
 @media screen and (min-width: 1200px){
     .Social{
-        left: 37%;
+        left: 43%;
     }
 }
