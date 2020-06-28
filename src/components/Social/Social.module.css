@@ -15,7 +15,26 @@
     color: black;
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 600px){
+    .Social{
+        left: 26%;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .Social{
+        left: 39%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .Social{
+        left:39.5%;
+    }
+}
+
+@media screen and (min-width: 1200px){
     .Social{
         left: 37%;
     }
