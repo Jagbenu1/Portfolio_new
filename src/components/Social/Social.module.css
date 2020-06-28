@@ -17,8 +17,7 @@
 
 @media screen and (max-width: 600px){
     .Social{
-        left: 26%;
-        right: 0;
+        left: 28%;
     }
 }
 
@@ -30,7 +29,7 @@
 
 @media screen and (min-width: 768px){
     .Social{
-        left:38%;
+        left: 38%;
     }
 }
 

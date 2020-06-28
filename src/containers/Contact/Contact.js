@@ -11,7 +11,7 @@ class Contact extends Component {
                     <h1>Contact me</h1>
                     <h3>Email: jacqueskagbenu@gmail.com</h3>
                     <h3>Phone: 678-343-1252</h3>
-                    <h5>If i dont answer your call, please leave a voice mail or send me a text.</h5>
+                    <h5>If I dont answer your call, please leave a voice mail or send me a text.</h5>
                     <Social />
                 </div>
             </Layout>
