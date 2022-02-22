@@ -5,7 +5,7 @@ const resume = (props) =>{
     return (
         <div className={classes.Container}>
             <a 
-                href="./JacquesAgbenu_Resume_2020.pdf" 
+                href="./Jacques_Agbenu_Resume.pdf" 
                 alt="Resume" 
                 target="_blank"
                 rel="noopener noreferrer"
