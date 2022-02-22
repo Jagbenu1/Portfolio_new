@@ -15,7 +15,11 @@ class About extends Component {
             {id:5, image: './logo512.png', alt:'REACT_logo', name: 'React.js'},
             {id:6, image: './MySQL.png', alt:'MySQL_logo', name: 'MySQL'},
             {id:7, image: './php.png', alt:'PHP_logo', name: 'PHP'},
-            {id:8, image: './sass.png', alt:'SASS_logo', name: 'Sass'}
+            {id:8, image: './sass.png', alt:'SASS_logo', name: 'Sass'},
+            {id:9, image: './node.png', alt:'Node_logo', name: 'Node'},
+            {id:10, image: './MongoDB.png', alt:'MondgoDB_logo', name: 'MongoDB'},
+            {id:11, image: './postgresql.png', alt:'PostgreSQL_logo', name: 'PostgreSQL'},
+            {id:12, image: './express.png', alt:'Express_logo', name: 'Express'}
         ]
     }
 

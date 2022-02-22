@@ -44,8 +44,7 @@ class Home extends Component {
                         onClick={()=>this.props.history.push('/about')}>
                             Let's Begin...
                         </button>
-                   </Typist>
-                   
+                   </Typist> 
                 </div>
         );
     }
