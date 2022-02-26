@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import { useState } from 'react';
 import classes from './About.module.css';
 import Layout from '../../hoc/Layout/Layout';
 import Skills from '../../components/Skills/Skills';
 import Resume from "../../components/Resume/Resume";
 
-class About extends Component {
+const About = () => {
 
-    state={
-        skill:[
+    const [skill, setSkill] = useState([
             {id:1, image: './css3.png', alt:'CSS_logo', name: 'CSS3'},
             {id:2, image: './git.png', alt:'GIT_logo', name: 'Git'},
             {id:3, image: './html.png', alt:'HTML_logo', name: 'HTML5'},
@@ -20,17 +19,13 @@ class About extends Component {
             {id:10, image: './MongoDB.png', alt:'MondgoDB_logo', name: 'MongoDB'},
             {id:11, image: './postgresql.png', alt:'PostgreSQL_logo', name: 'PostgreSQL'},
             {id:12, image: './express.png', alt:'Express_logo', name: 'Express'}
-        ]
-    }
-
-
-    render(){
+    ]);
 
         let skills = null;
 
         skills=(
             <Skills 
-                skill={this.state.skill}
+                skill={skill}
             />
         )
 
@@ -51,7 +46,11 @@ class About extends Component {
                     
                     <div className={classes.Content}>
                         <h1>Who Am I?</h1>
-                        <p>I am a Full Stack Web Developer who specializes in Front-End web technologies. Technology has been a passion of mine since I was little but I started my journey in the world of Coding and Web Development when I entered college in the fall of 2015.</p>
+                        <p>
+                            I am a Full Stack Web Developer who specializes in Front-End web technologies. 
+                            Technology has been a passion of mine since I was little but I started my journey in the world of Coding and Web Development 
+                            when I entered college in the fall of 2015.
+                        </p>
                     </div>
                     <br />
 
@@ -69,7 +68,7 @@ class About extends Component {
                 </div>
             </Layout>   
         );
-    }
+    
 }
 
 export default About;

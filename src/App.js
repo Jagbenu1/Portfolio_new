@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './containers/Home/Home';
 import About from './containers/About/About';
 import Portfolio from './containers/Portfolio/Portfolio';
@@ -10,12 +10,12 @@ class App extends Component {
   render(){
     return (
       <div>
-          <Switch>
-            <Route path='/contact' exact component={Contact}/>
-            <Route path='/portfolio' exact component={Portfolio}/>
-            <Route path='/about' exact component={About}/>
-            <Route path='/' exact component={Home} /> 
-          </Switch> 
+          <Routes>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/portfolio' element={<Portfolio/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/' element={<Home/>} /> 
+          </Routes> 
       </div>
     );
   };

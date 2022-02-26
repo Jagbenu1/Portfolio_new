@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 import classes from './Home.module.css';
 import 'react-typist/dist/Typist.css';
 import Typist from 'react-typist';
@@ -6,9 +7,10 @@ import WarpSpeed from '../../components/UI/Warpspeed/warpspeed';
 
 
 
-class Home extends Component {
+const Home = (props) => {
+    let navigate = useNavigate();
 
-    componentDidMount(){
+    useEffect(()=> {
         let x = new WarpSpeed("canvas");
         x.TARGET_SPEED=5;
         // x.STAR_R=235;
@@ -16,10 +18,8 @@ class Home extends Component {
         // x.STAR_B=52;
         // x.BACKGROUND_COLOR="#35CE8D";
         // x.STAR_SCALE="3";
-    }
-    
-    render(){
-        console.log(this.props);
+    }, []);
+        
         const warpStyle = {
             postion: 'fixed',
             top: '0',
@@ -41,13 +41,12 @@ class Home extends Component {
                         <p>Full Stack Web Developer</p>
                         <Typist.Delay ms={600} />
                         <button className={classes.Button}
-                        onClick={()=>this.props.history.push('/about')}>
+                        onClick={()=>navigate('/about')}>
                             Let's Begin...
                         </button>
                    </Typist> 
                 </div>
         );
-    }
-}
+};
 
 export default Home;
