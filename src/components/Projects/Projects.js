@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
 import Project from './Project/Project';
 
-
-class Projects extends Component {
-    render(){
-        return this.props.project.map((project) =>{
+const Projects = (props) => {
+        return props.project.map((project) =>{
             return(
                 <Project 
                 key={project.id}
@@ -15,8 +12,7 @@ class Projects extends Component {
                 exLink={project.exLink}
                 disabled={project.disabled}/>
             )
-        })
-    }
+        });
 };
 
 export default Projects;

@@ -1,9 +1,8 @@
-import React, { Component } from 'react';
 import Skill from './Skill/Skill';
 
-class Skills extends Component {
-    render(){
-        return this.props.skill.map((skill) =>{
+const Skills = (props) => {
+    
+        return props.skill.map((skill) =>{
             return (
                 <Skill 
                     key={skill.id}
@@ -13,7 +12,6 @@ class Skills extends Component {
                 />
             )
         })
-    }
 }
 
 export default Skills;
