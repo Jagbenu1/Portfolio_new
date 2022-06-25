@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Skill.module.css';
 
-const skill = (props) => {
+const Skill = (props) => {
     return(
         <article className={classes.Card}>
             <img src={props.image} alt={props.alt} />
@@ -10,4 +10,4 @@ const skill = (props) => {
     );
 };
 
-export default skill;
+export default Skill;

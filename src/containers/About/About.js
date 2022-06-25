@@ -5,7 +5,7 @@ import Skills from "../../components/Skills/Skills";
 import Resume from "../../components/Resume/Resume";
 
 const About = () => {
-  const [skill, setSkill] = useState([
+  const [skillList, setSkillList] = useState([
     { id: 1, image: "./css3.png", alt: "CSS_logo", name: "CSS3" },
     { id: 2, image: "./git.png", alt: "GIT_logo", name: "Git" },
     { id: 3, image: "./html.png", alt: "HTML_logo", name: "HTML5" },
@@ -19,7 +19,7 @@ const About = () => {
     { id: 6, image: "./MySQL.png", alt: "MySQL_logo", name: "MySQL" },
     { id: 7, image: "./php.png", alt: "PHP_logo", name: "PHP" },
     { id: 8, image: "./sass.png", alt: "SASS_logo", name: "Sass" },
-    { id: 9, image: "./node.png", alt: "Node_logo", name: "Node" },
+    { id: 9, image: "./node.png", alt: "Node_logo", name: "Node.js" },
     { id: 10, image: "./MongoDB.png", alt: "MondgoDB_logo", name: "MongoDB" },
     {
       id: 11,
@@ -27,33 +27,23 @@ const About = () => {
       alt: "PostgreSQL_logo",
       name: "PostgreSQL",
     },
-    { id: 12, image: "./express.png", alt: "Express_logo", name: "Express" },
+    { id: 12, image: "./express.png", alt: "Express_logo", name: "express.png" },
   ]);
-
-  let skills = null;
-
-  skills = <Skills skill={skill} />;
 
   return (
     <Layout>
       <div className={classes.About}>
+        
         <div className={classes.Octo}>
           <div className={classes.Octo1}>
             <img
               src="./me.jpeg"
               alt="Jacques Agbenu"
-              style={{
-                width: "300px",
-                height: "300px",
-                margin: "0 auto",
-                textAlign: "center",
-                display: "block",
-              }}
             />
           </div>
         </div>
 
-        <div className={classes.Content}>
+        <div className={classes.Headline}>
           <h1>Who Am I?</h1>
           <p>
             I am a Full Stack Web Developer who specializes in Front-End web
@@ -62,15 +52,12 @@ const About = () => {
             Development when I entered college in the fall of 2015.
           </p>
         </div>
-        <br />
+
         <Resume />
-        <br />
-        <br />
 
         <h1>Skills</h1>
-
-        <div className={classes.Centered}>
-          <section className={classes.Cards}>{skills}</section>
+        <div className={classes.Grid_container}>
+          <Skills skill={skillList} />
         </div>
       </div>
     </Layout>

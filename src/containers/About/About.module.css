@@ -1,30 +1,30 @@
 .About{
     margin-top: 80px;
     padding: 20px;
-}
-
-.About h1{
     text-align: center;
 }
 
-.Content{
-    text-align: center;
+.Headline{
     width: 75%;
     /* border: solid red 2px; */
     margin: 0 auto;
+    margin-bottom: 6%;
 }
 
-.Cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.Grid_item{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
-.Centered{
-    margin: 0 auto;
-    text-align: center; 
+.Grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
 }
-
 
 .Octo, .Octo div{
     margin:0 auto;
@@ -34,10 +34,9 @@
     height: 300px;
 }
 
-.Octo, .Octo div{
-    width: 260px;
-    height: 260px;
-}
+/* .Octo, .Octo div{
+    
+} */
 
 .Octo{
     transform: rotate(45deg);
@@ -47,17 +46,36 @@
     transform: rotate(-45deg);
 }
 
-@media screen and (min-width: 40em){
-    .Cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+.Octo1 img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: "center";
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    .Grid_container{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: grey;
+        padding: 2px;
+    }
+
+    .Octo, .Octo div{
+        margin:0 auto;
+        transform-origin: 50% 50%;
+        overflow:hidden;
+        width: 200px;
+        height: 200px;
+    }
+
+    .Octo1 img {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        text-align: "center";
+        display: block;
     }
 }
 
-
-/* @media screen and (min-width: 52em){
-    .Centered{
-
-    }
-} */

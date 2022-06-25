@@ -1,14 +1,12 @@
 import Skill from "./Skill/Skill";
+import classes from "../../containers/About/About.module.css";
 
-const Skills = (props) => {
-  return props.skill.map((skill) => {
+const Skills = ({ skill }) => {
+  return skill.map((skill) => {
     return (
-      <Skill
-        key={skill.id}
-        image={skill.image}
-        alt={skill.alt}
-        name={skill.name}
-      />
+      <div className={classes.Grid_item} key={skill.id}>
+        <Skill image={skill.image} alt={skill.alt} name={skill.name} />
+      </div>
     );
   });
 };
