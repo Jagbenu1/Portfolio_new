@@ -9,6 +9,7 @@
 
 .Row{
     margin: 0 -5px;
+    /* border: solid red 2px; */
     box-sizing: border-box;
     /* border: solid red 2px; */
 }
