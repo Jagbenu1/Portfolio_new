@@ -27,7 +27,7 @@ const About = () => {
       alt: "PostgreSQL_logo",
       name: "PostgreSQL",
     },
-    { id: 12, image: "./express.png", alt: "Express_logo", name: "express.png" },
+    { id: 12, image: "./express.png", alt: "Express_logo", name: "Express.js" },
   ]);
 
   return (

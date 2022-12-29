@@ -1,14 +1,12 @@
 import { useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import classes from './Home.module.css';
-import 'react-typist/dist/Typist.css';
-import Typist from 'react-typist';
 import WarpSpeed from '../../components/UI/Warpspeed/warpspeed';
 
 
 
 const Home = (props) => {
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     useEffect(()=> {
         let x = new WarpSpeed("canvas");
@@ -30,7 +28,14 @@ const Home = (props) => {
         return(
                 <div className={classes.Banner}>
                    <canvas id="canvas" style={warpStyle}></canvas>
-                   <Typist className={classes.Text} cursor={{show: false,
+                   <div className= {classes.Container}>
+                        <h1 className= {classes.Typedout}>Hello, My name is Jacques Agbenu</h1>
+                        <p className = { classes.Typedout}>
+                                Web Developer
+                        </p>
+                        <button className={classes.Typedout} onClick={()=>navigate('/about')}>Let's Begin..</button>
+                   </div>
+                   {/* <Typist className={classes.Text} cursor={{show: false,
                      blink: true,
                      element: '|',
                      hideWhenDone: true,
@@ -44,7 +49,8 @@ const Home = (props) => {
                         onClick={()=>navigate('/about')}>
                             Let's Begin...
                         </button>
-                   </Typist> 
+                   </Typist>  */}
+
                 </div>
         );
 };

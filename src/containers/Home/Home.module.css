@@ -53,6 +53,31 @@
     background-color: #ffffff;
 }
 
+.Container{
+    display: inline-block;
+    position: absolute;
+}
+
+.Typedout{
+      overflow: hidden;
+      /* border-right: .15em solid orange; */
+      white-space: nowrap;
+      animation: typing 1s steps(20, end) forwards;
+      font-size: 1.6rem;
+      width: 0;
+      color: white;
+      text-align: center;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100% }
+}
+
+#canvas{
+    position: absolute;
+}
+
 @media all and (max-width:30em){
     .Button{
         display: block;
