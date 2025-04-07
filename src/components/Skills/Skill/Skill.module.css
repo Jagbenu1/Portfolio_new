@@ -1,5 +1,5 @@
 .Card{
-    flex: 0 1 calc(25% - 1em);
+    flex: 1;
     /* border: black solid 1px; */
     text-align: center;
     margin: 2px;
